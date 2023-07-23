@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <title>Detail Produk</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+
+    <body>
+        <!-- header -->
+        <header class="py-2 shadow-sm bg-white">
+            <div class="flex items-center justify-between mx-10 z-50">
+                <!-- Logo -->
+                <a href="#">
+                    <img src="img/logo.png" class="w-48">
+                </a>
+                <!-- Search -->
+                <div class="w-full max-w-xl relative flex">
+                    <span class="absolute left-4 top-3 text-lg text-gray-400">
+                        <i class="fas-fa-search"></i>
+                    </span>
+                    <input tpe="text" class="w-full border border-red-500 boder-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none" placeholder="Search">
+                    <button class="bg-red-500 broder border-red-500 text-white px-8 rounded-r-md hover:bg-transparent hover:text-red-500 transition">Search</button>
+                </div>
+                
+                <!-- Icon -->
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-center text-gray-700 hover:text-red-500 transition relative">
+                        <div class="text-2xl">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="text-xs leading-3">Wishlist</div>
+                        <span class="absolute right-0 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-red-500 text-white text-xs">8</span>
+                    </a>
+                    <a href="#" class="text-center text-gray-700 hover:text-red-500 transition relative">
+                        <div class="text-2xl">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div class="text-xs leading-3">Cart</div>
+                        <span class="absolute -right-2 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-red-500 text-white text-xs">10</span>
+                    </a>
+                    <a href="#" class="text-center text-gray-700 hover:text-red-500 transition relative">
+                        <div class="text-2xl">
+                            <i class="fa-solid fa-user fa-flip"></i>
+                        </div>
+                        <div class="text-xs leading-3">Account</div>
+                    </a>
+                </div>
+            </div>
+
+            </div>
+        </header>
+
+        <!-- navigasi -->
+        <nav class="bg-grey-700">
+
+        </nav>
+
+        <div class="container py-4 flex items-center gap-3 mx-10">
+            <a href="#" class="text-primary text-base">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <span class="text-sm text-gray-400">
+                <i class="fa-solid fa-chevron-right"></i>
+            </span>
+            <p class="text-gray-600 font-medium">Product View</p>
+        </div>
+        
+        <!-- tampilan produk-->
+        <section class="flex mt-10 flex-wrap justify-center">
+            <!-- Gambar Produk -->
+            <div class="flex flex-col justify-between w-auto gap-4 mb-8">
+                <img src="img/1.jpg" class="w-auto h-96 aspect-auto bg-contain rounded-xl border-solid border-8 cursor-pointer">
+                <div class="flex flex-row justify-between gap-4">
+                    <img src="img/1.jpg" class="w-auto h-32 aspect-auto bg-contain rounded-xl border-solid border-4 cursor-pointer transition hover:scale-110 delay-100">
+                    <img src="img/2.jpg" class="w-auto h-32 aspect-auto bg-contain rounded-xl border-solid border-4 cursor-pointer transition hover:scale-110 delay-100">
+                    <img src="img/3.jpg" class="w-auto h-32 aspect-auto bg-contain rounded-xl border-solid border-4 cursor-pointer transition hover:scale-110 delay-100">
+                </div>
+            </div>
+
+            <!-- Deskripsi Produk -->
+            <div class="flex flex-col gap-4 w-auto xl:w-1/2 m-4">
+                <h2 class="text-3xl font-medium uppercase mb-2">Tasawuf Modern - Buya Hamka</h2>
+                <div class="grid grid-cols-5">
+                    <div class="text-gray-800 font-semibold ">
+                        <p>Berat</p>
+                        <p>Dimensi</p>
+                        <p>Halaman</p>
+                        <p>Penulis</p>
+                        <p>Penerbit</p>
+                    </div>
+                    <div class="text-gray-500 font-semibold">
+                        <p>: 341 g</p>
+                        <p>: 13.5 x 20.5</p>
+                        <p>: 397</p>
+                        <p>: Buya Hamka</p>
+                        <p>: Republika</p>
+                    </div>
+                </div>
+                <div class="flex items-baseline mb-1 space-x-2 font-roboto mt-4">
+                    <p class="text-2xl text-orange-500 font-semibold">Rp. 78.000</p>
+                </div>
+                <p class="mt text-gray-500">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, atque. Hic ab vitae unde soluta tempore! In tempore dolor, repellendus deserunt fugit assumenda aperiam veritatis pariatur culpa, ex cupiditate facilis.
+                </p>
+
+                <!-- Jumlah -->
+                <div class="mt-4">
+                    <h3 class="text-sm text-gray-800 uppercase mb-1">Jumlah</h3>
+                    <div class="flex border border-gray-600 text-gray-600 divide-x-gray-300 w-max">
+                        <div class="h-8 w-8 text-xl flex items-center justify-center cursor-pointer select-one">-</div>
+                        <div class="h-8 w-8 text-base flex items-center justify-center">1</div>
+                        <div class="h-8 w-8 text-xl flex items-center justify-center cursor-pointer select-one">+</div>
+                    </div>
+                </div>
+
+                <!-- Cart -->
+                <div class="flex gap-3 border-b border-gray-200 pb-5 mt-6">
+                    <a href="#" class="bg-red-500 border border-primary text-white px-8 py-2 font-medium rounded uppercase 
+                        flex items-center gap-2 hover:bg-transparent hover:text-red-500 transition">
+                        <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+                    </a>
+                    <a href="#" class="border border-gray-300 text-gray-800 px-8 py-2 font-medium rounded uppercase
+                        flex items-center gap-2 hover:text-primary transition">
+                        <i class="fa-regular fa-heart"></i> Wishlist 
+                    </a>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
